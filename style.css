@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+    height: 80vh;
+    background-color: blue;
+}
+
+.ball {
+    height: 121px;
+    width: 121px;
+    background-color: red;
+    border-radius: 70px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    animation: movement 3s linear infinite;
+}
+
+@keyframes movement {
+
+    16%,
+    48%,
+    78% {
+        top: 300px;
+        animation-timing-function: ease-out;
+    }
+
+    32% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+
+    62% {
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        top: 200px;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        top: 270px;
+        left: 100%;
+        animation-timing-function: ease-out;
+        transform: rotate(360deg);
+
+    }
+}
